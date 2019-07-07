@@ -1,0 +1,27 @@
+MainWindow
+  id: catchWindow
+  !text: tr('Conquista de Captura')
+  height: 200
+  @onClose: modules.game_catch.hide()
+  &save: true
+
+  UIButton
+    id: loading
+    visible: true
+    image-source: 001.png
+    anchors.verticalCenter: parent.verticalCenter
+    anchors.horizontalCenter: parent.horizontalCenter
+
+  Button
+    id: closeButton
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    !text: tr('Close')
+    width: 40
+    @onClick: modules.game_catch.hide()
+
+  Label
+    !text: tr('XP: 50000')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.top

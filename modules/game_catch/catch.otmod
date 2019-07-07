@@ -1,0 +1,9 @@
+Module
+  name: game_catch
+  description:
+  author: GODzru & Noninhouh
+  website: none
+  sandboxed: true
+  scripts: [ catch ]
+  @onLoad: init()
+  @onUnload: terminate()
